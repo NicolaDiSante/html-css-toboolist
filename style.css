@@ -68,6 +68,7 @@ div.content-task, div.content-today, div.content-upcoming{
 
 .content{
   background-color: white;
+  line-height: 40px;
 }
 
 #spunta, #cross{
