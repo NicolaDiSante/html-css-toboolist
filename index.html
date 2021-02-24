@@ -10,18 +10,69 @@
 <body>
 
   <!-- Logo & Banner -->
+   
   <header>
-    <section class="beginning">
-      <img src="img/Logo.png" class="logo" alt="Logo Toboolist">
-      <span class="title">Toboolist</span>
-    </section>
+    <img src="img/Logo.png" class="logo" alt="logo">
+    <span class="logo-text">Toboolist</span>
   </header>
+
 
   <!-- /Logo & Banner -->
   
      <!--  Main Content -->
 
-  <main>
+     <main>
+       <div class="container">
+         <div class="bloc add">
+           <button class="filled">Add Task</button>
+           <button class="empty">Add Selection</button>
+           
+
+         </div>
+
+         <div class="bloc task">
+           <ul class="task">
+             <li>
+               <h3> New Task</h3>
+               <ul>
+                 <li><span class="circle checked"></span>Quarterly Newsletter <span class="tag tag-type-editorial">Editorial</span></li>
+              </ul>
+             </li>
+           </ul>
+
+           <ul class="task">
+            <li>
+              <h3> Today</h3>
+              <ul>
+                <li><span class="circle checked"></span>Recruiting Blog Post <span class="tag tag-type-editorial">Editorial</span></li>
+                <li><span class="circle checked"></span>Mobile App Launch <span class="tag tag-type-goals"> Q1 Goal</span></li>
+                <li><span class="circle delete"></span>Interview John H <span class="tag tag-type-recruiting">Rrecruiting</span></li>
+                <li><span class="circle checked"></span>Summit Update to mobile StoreFronts <span class="tag tag-type-mobile">Mobile</span></li>
+             </ul>
+            </li>
+          </ul>
+
+          <ul class="task">
+            <li>
+              <h3> Upcoming</h3>
+              <ul>
+                <li><span class="circle delete"></span>Schedule Meeting with Alex</li>
+                <li><span class="circle checked"></span>Homepage refresh <span class="tag tag-type-website">Website</></li>
+                <li><span class="circle checked"></span>Onboard New Sales Team members <span class="tag tag-type-sale">Sales</span></li>
+                <li><span class="circle checked"></span>Review editorial calendar <span class="tag tag-type-editorial">Editorial</span></li>
+             </ul>
+            </li>
+          </ul>
+
+
+         </div>
+       </div>
+     </main>
+
+
+
+
+  <!-- <main>
     <div class="add-section">
       <span class="task">Add Task</span>
       <span class="section">Add Section</span>
@@ -60,7 +111,7 @@
 
 
 
-  </main>
+  </main> -->
 
 
 <!-- /Main Content -->
@@ -72,3 +123,53 @@
   
 </body>
 </html>
+
+
+
+  <!-- correzione post Lezione -->
+
+  <!-- crea una cartella dove sono contenuti il file html,css e le img
+  e naturalmente per creare il collegamento nel codice link sull'head devi mettere prima la cartella e poi css o img etc
+
+  <header>
+    <img src="logo" class="logo" alt="logo"> gli do una classe logo
+    <span class="logo-text">Toobolist</span> gli do una classe logo-text
+  </header>
+
+
+  <main>
+    andiamo a creare un container unico per le due sezioni per dividere i due box DETTAGLI DETTAGLI DETTAGLI!!! (guarda gli angoli)
+    <div class="container">  ha una sua dimensione e un suo colore di sfondo
+      <div class="top"> per identificare la sezione top
+      <button class="buttom filled">
+        <a href=""> Add task</a> gli diamo la classe a, per renderlo funzionale in modo che se si passa il mouse sopra, ci si può cliccare
+      </button> diamo una classe generica 
+      <button class="button empty"> <a href=""></a> add section</button>
+    </div>
+
+    <div class="tasks"> per identificare la sezione sotto
+
+      <ul>
+        <li>
+          <h3>New Tasks</h3>
+          <ul><li>
+            <span class="circle checked"></span> Quarterly newwletter</li></ul>  gli diamo un h3 perchè è piu grande
+         </li>
+        <li>
+          <h3>Today</h3> 
+          <ul><li>
+            <span class="circle delete"></span> Quarterly newwletter</li></ul>  gli diamo un h3 perchè è piu grande
+         </li>
+        </li> 
+        <li>
+          <h3>Upcoming</h3>
+       </li>
+        
+
+    </div> 
+    </div>
+  </main> -->
+  
+
+
+  <!-- correzione post Lezione -->

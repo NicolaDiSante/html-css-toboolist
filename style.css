@@ -1,9 +1,142 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-body{
+body {
+  background-color: rgba(194, 194, 194, 0.2);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: white;
+  height: 60px;
+  padding: 5px 20px;
+  margin-bottom: 30px;
+}
+
+img.logo, .logo-text {
+  vertical-align: middle;
+}
+
+.logo-text{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+div.container{
+  background-color: rgba(194, 194, 194, 0.2);
+  width: 80%;
+  margin:auto;
+  border-radius: 1%;
+}
+
+.bloc.add, .bloc.task{
+  background-color: rgba(255, 255, 255);
+  padding: 10px 40px;
+  margin-bottom: 4px;
+}
+
+button{
+  font-size: 10px;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+button.filled{
+  background-color: rgb(26, 187, 250);
+  border: 1px solid  rgb(26, 187, 250);
+  color: white;
+}
+
+button.empty{
+  background-color: white;
+  color: gray;
+  border: 1px solid gray;
+}
+
+ul{
+  list-style-type: none;
+}
+
+li{
+  padding: 10px 0;
+  font-size: 12px;
+}
+
+h3{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+li h3::before{
+  content: '\25BC';
+}
+
+li .circle::before {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  border-radius: 50%;
+  line-height: 15px;
+  font-size: 10px;
+  text-align: center;
+}
+
+li .circle.checked::before {
+  content: '\2713';
+  border: 1px solid #2cc6ab;
+  color: #2cc6ab;
+}
+
+li .circle.delete::before {
+  content: '\2573';
+  border: 1px solid #ff0000;
+  color: #ff0000;
+}
+
+.tag {
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 10px;
+  color: white;
+}
+
+.tag-type-editorial {
+  background-color: #09a9ed;
+}
+
+.tag-type-goals {
+  background-color: #ab5de6;
+}
+
+.tag-type-recruiting {
+  background-color: #00fd94;
+}
+
+.tag-type-mobile {
+  background-color: #ffa632;
+}
+
+.tag-type-website {
+  background-color: rgb(218, 31, 218);
+}
+
+.tag-type-sale {
+  background-color: rgb(60, 204, 55);
+}
+
+
+
+
+
+
+
+
+
+/* body{
   background-color:rgba(230, 230, 230, 0.842);
 }
 
@@ -117,3 +250,127 @@ div.content-task, div.content-today, div.content-upcoming{
 .sales {
   background-color:rgb(0, 187, 0);
 }
+ */
+
+
+
+
+/* Correzione Post Esercizio */
+/* *  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; lo diamo sempre per eliminare la somma tra widthe e height al padding e margin dei box
+}
+
+body {
+  background color
+  font-family: arial; lo do al body cosi' tutto il body ha quel font
+}
+
+header {
+  background color
+  height 
+  padding perchè così allontaniamo il contenuto dal bordo 
+  diamo il margin bottom per spostare il container oppure lo diamo al container margin top (preferibile dare il bottom a quello superiore) 
+
+
+}
+
+.logo{
+  gli diamo height di tutto lo spessore
+  vertical align middle perchè così andiamo ad allinearlo
+}
+
+.logo-text{
+  font grande 
+  font weight
+  vertical align middle così lo allineiamo con il logo
+}
+
+.container{
+  width 70%
+  margin auto;
+  background color gli diamo il bianco;
+  border radius per smussare 
+  gli diamo un padding per allontanare il contenuto dal bordo
+
+}
+
+.button {
+  gli diamo un padding per il contenuto del bottone 
+  non devono avere il bordo, quindi border:none 
+  e gli diamo il border radius per smussare
+}
+
+button a{
+  text decoration:none (cosi' non ha l'underline)
+}
+
+
+.filled{
+ diamo background color ai bottoni
+ diamo il bordo
+}
+
+.empty{
+  diamo background color
+  diamo il bordo ;
+
+}
+
+.filled a{
+  colore
+}
+
+.empty a {
+  colore
+}
+
+.container .top{
+  gli do il border bottom dello stesso colore dello sfondo così sembra separato dalla sezione tasks;
+
+}
+
+.container .tasks{
+  gli diamo padding per separarlo dal container top 
+}
+
+li {
+  list-style: none; perchè non vogliamo i puntini
+  padding: 10px 0 
+}
+
+li h3{
+  padding left
+}
+
+li h3::before{
+  content: carattere speciale (il contenuto di before va a posizionarsi prima di h3) bisogna usare i css entity che sono diversi da quelli di html per i caratteri speciali (before si usa per il testo non per icone/immagini)
+
+}
+
+li .circle::before{    va a creare i cerchi con le spunte e le croci
+  display: inline-block
+  widht  (per fare il cerchio, widht height e line height devono essere di px uguali)
+  height
+  border radius 50% 
+  line height
+  font size
+  text align center
+ 
+}
+
+li .circle.checked::before {   andiamo a mettere la spunta
+  content (la spunta)
+  border
+  color 
+}
+
+li .circle.delete::before {    andiamo a mettere la X
+  content (la X)
+  border
+  color 
+}
+
+diamo lo span agli elementi colorati come fatto sopra! */
+/* Correzione Post Esercizio */
